@@ -1,0 +1,75 @@
+<html>
+<style type="text/css">
+  .centered-form{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+display-label:inline-block;
+}
+ label{
+width:100px;
+display:inline-block;
+}   
+input,select
+{
+width:200px;
+height:25px;
+margin:2px;
+box-sizing:border-box;
+}       
+div
+{
+  color: white;
+  background-color: blue;
+  margin: 2px;
+   font-size: 25px;
+}
+</style>
+<head>
+<title>flight</title>
+<body >
+<div class="centered-form">
+<div class="div">
+<center>
+<h1><em>AIR INDIA RESERVATION SYSTEM</em></h1>
+<h2><em>fill out these details to generate ticket</em></h2>
+
+<br><br>
+<form action="http://localhost:8080/servlet/HelloFor" method="GET">
+<table style="color:white;  font-size: 25px;"><thead></thead><tbody>
+<tr><td>Name of passenger:</td>
+<td><input type="text"name="First_name"/></td></tr>
+<tr><td><label> Traveltype:</label></td>
+<td><select name="travel">
+    <option value="one way">One way</option>
+    <option value="round trip">Round trip</option>
+  </select></td></tr>
+<tr><td>  <label> Departure:</label></td>
+<td> <select name="departure">
+    <option value="Bangalore">Bangalore</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Chennai">Chennai</option>
+  </select></td></tr>
+<tr><td>
+ <label> Arrival:</label></td>
+<td>  <select name="arrival">
+    <option value="Bangalore">Bangalore</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Chennai">Chennai</option>
+  </select> </td></tr>
+<tr><td>Date &Time Of Travel:</td>
+          <td>  <input type="datetime-local" id="Test_DatetimeLocal" name="dot"> </td></tr>
+<tr><td>Flight code:</td>
+<td><input type="text"name="code"/></td></tr>
+<tr><td>class:</td>
+<td><input type="text"name="class"/></td></tr>
+<tr><td><label>id proof:</label></td>
+<td><input type="file" name="file"></td></tr>
+</tbody>
+</table>
+<input type="submit" value="submit" ></form>
+</div></div>
+</body></html>

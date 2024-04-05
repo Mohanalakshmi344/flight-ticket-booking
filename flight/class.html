@@ -1,0 +1,76 @@
+<html>
+<style>
+div
+{
+  color: white;
+  background-color: blue;
+  margin: 2px;
+   font-size: 25px;
+}
+ .leftdiv
+         {
+         float: left;
+          color: white;
+         }
+ .middlediv
+         {
+         float: left;
+         background-color:blue;
+         
+         }
+ . rightdiv
+         {
+         float: left;
+         }
+</style>
+
+<head>
+<title>
+ Air india
+</title>
+</head>
+<body>
+<div class="middlediv";>
+<center/>
+<h2><em>AIR INDIA RESERVATION SYSTEM</em></h2>
+<br/>
+<img src="flight.jpg" alt="flight" width="700" height="500">
+</br>
+</div>
+<div class="leftdiv">
+<table bgcolor=pink cellspacing="5" cellpadding="10">
+<thead bgcolor=violet>
+<tr>
+<th>Flight</th>
+<th>Departure</th>
+<th>Duration</th>
+<th>Arrival</th>
+<th>Economy</th>
+<th>Business</th>
+<th>First class</th>
+</tr></thead>
+<tbody>
+<tr><td>&#9992 15010</td><td>10.00am</td><td>2hrs</td><td>12.00am</td><td>5610</td><td>6110</td><td>7000</td>
+</tr>
+<tr><td>&#9992 15012</td><td>11.00am</td><td>2hrs</td><td>1.00pm</td><td>5610</td><td>6110</td><td>7000</td>
+</tr>
+<tr><td>&#9992 15016</td><td>3.00pm</td><td>2hrs</td><td>5.00pm</td><td>5610</td><td>6110</td><td>7000</td>
+</tr>
+<tr><td>&#9992 15018</td><td>7.00pm</td><td>2hrs</td><td>9.00pm</td><td>5610</td><td>6110</td><td>7000</td>
+</tr>
+<tr><td>&#9992 15024</td><td>10.00pm</td><td>2hrs</td><td>12.00pm</td><td>5610</td><td>6110</td><td>7000</td>
+</tr>
+</tbody>
+</table>
+</br></br></br></br>
+<center>Pick your Flight and Class</center></br>
+<form action="http://localhost:8080/servlet/HelloForm" method="GET" >
+
+&nbspFlight code:<input type="text"name="code"/></br>
+&nbsp&nbspClass:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"name="class"id="cls"/></br></br>
+<center>
+<a href="ticket.html" style="color:red;" >proceed</a></br></br>
+</form>
+</center></div></br></br>
+</body>
+</html>
